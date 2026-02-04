@@ -1,0 +1,23 @@
+body {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  height: 100vh;
+}
+
+div {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+}
+
+#div1 {
+  background-color: rgb(196, 236, 136);
+}
+
+#div2 {
+  background-color: pink;
+}
+
