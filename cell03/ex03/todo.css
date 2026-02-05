@@ -1,0 +1,75 @@
+/* พื้นหลังหน้าจอให้ดูสะอาด */
+body {
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+#ft_list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 350px;
+}
+
+/* ปุ่ม New - ใช้สีดำสนิทตัดกับขอบมนเล็กน้อย */
+.btn {
+    background-color: #000;
+    border-radius: 6px;
+    color: #fff;
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    min-height: 45px;
+    width: 100%;
+    border: none;
+    transition: all 0.2s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.btn:hover {
+    background-color: #ffcc00;
+    color: #000;
+}
+
+#todoitem {
+    display: block;
+    position: relative;
+    max-width: 300px;
+    background-color: #1a1a1a;
+    border-radius: 8px;
+    padding: 1.5em 1.2em;
+    margin: 8px 0;
+    color: #fff;
+    overflow: hidden;
+    z-index: 0;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    border: 1px solid #333;
+    transition: color 0.3s ease;
+}
+
+#todoitem:before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: -16px;
+    right: -16px;
+    background: #ffcc00;
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    transform: scale(1);
+    transform-origin: 50% 50%;
+    transition: transform 0.45s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+#todoitem:hover {
+    color: #000;
+}
+
+#todoitem:hover:before {
+    transform: scale(35);
+}
