@@ -95,7 +95,7 @@ section {
   margin-bottom: 20px;
 }
 
-.display-name {
+.name {
   font-size: 3rem;
   font-weight: 800;
   margin-bottom: 10px;
@@ -116,7 +116,7 @@ section {
   margin: 0 auto;
   padding: 0 20px;
   display: grid;
-  grid-template-columns: 1.5fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1.5fr));
   gap: 50px;
 }
 
@@ -253,9 +253,6 @@ section {
 }
 
 @media (max-width: 768px) {
-  .grid-container {
-    grid-template-columns: 1fr;
-  }
   .name {
     font-size: 2rem;
   }
